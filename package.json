@@ -1,0 +1,22 @@
+{
+  "name": "qa-va02-cypress",
+  "version": "1.0.0",
+  "description": "Projeto destinado a automatizar testes em um site público escolhido, para garantir a funcionalidade correta de determinados cenários",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.16.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e/steps"
+  }
+}
+
