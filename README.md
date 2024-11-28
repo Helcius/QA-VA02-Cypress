@@ -3,8 +3,11 @@ Projeto destinado a automatizar testes em um site público escolhido, para garan
 
 ## Referência dos códigos necessários para rodar os testes:
 Criar o projeto node (package.json): npm init –y
+
 Instalar o Cypress (na pasta do projeto): npm install cypress –D
+
 Instalar o Cucumber: npm install --save-dev cypress-cucumber-preprocessor
+
 Execute os testes utilizando o comando: npx cypress open
 
 Alunos:
