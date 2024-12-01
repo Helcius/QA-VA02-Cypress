@@ -16,5 +16,17 @@ validarMenu() {
     cy.get('.MenuModal__Content__Left > .MenuModal__Content__List > :nth-child(4) > .fitt-tracker > .AnchorLink').should('have.text', 'Science')
     cy.get('.MenuModal__Content__Left > .MenuModal__Content__List > :nth-child(5) > .fitt-tracker > .AnchorLink').should('have.text', 'Travel')
 }
+
+clicarAnimals() {
+    cy.get('.MenuModal__Content__Left > .MenuModal__Content__List > :nth-child(1) > .fitt-tracker > .AnchorLink').click();
 }
 
+validarPageTitulo(titulo) {
+    cy.get('.Header > div > .RichText').should('be.visible')
+    cy.get('.Header > div > .RichText').should('have.text', titulo)
+}
+
+
+}
+
+export default new HomePage();
