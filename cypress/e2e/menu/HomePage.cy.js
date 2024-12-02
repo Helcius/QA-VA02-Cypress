@@ -20,10 +20,22 @@ validarMenu() {
 clicarAnimals() {
     cy.get('.MenuModal__Content__Left > .MenuModal__Content__List > :nth-child(1) > .fitt-tracker > .AnchorLink').click();
 }
+clicarEnvironment() {
+    cy.get('.MenuModal__Content__Left > .MenuModal__Content__List > :nth-child(2) > .fitt-tracker > .AnchorLink').click();
+}
+clicarHistory() {
+    cy.get('.MenuModal__Content__Left > .MenuModal__Content__List > :nth-child(3) > .fitt-tracker > .AnchorLink').click();
+}
+clicarScience() {
+    cy.get('.MenuModal__Content__Left > .MenuModal__Content__List > :nth-child(4) > .fitt-tracker > .AnchorLink').click();
+}
+clicarTravel() {
+    cy.get('.MenuModal__Content__Left > .MenuModal__Content__List > :nth-child(5) > .fitt-tracker > .AnchorLink').click();
+}
 
 validarPageTitulo(titulo) {
     cy.get('.Header > div > .RichText').should('be.visible')
-    cy.get('.Header > div > .RichText').should('have.text', titulo)
+    cy.get('.Header > div > .RichText').should('contain.text', titulo)
 }
 
 

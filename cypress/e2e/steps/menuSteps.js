@@ -36,18 +36,19 @@ When("eu clicar no link Travel", () => {
     HomePage.clicarTravel();
 })
 
+
 Then("devo ser redirecionado para a página Animals", () => {
     HomePage.validarPageTitulo('Animals');
 })
 Then("devo ser redirecionado para a página Environment", () => {
-    HomePage.validarEnvironment();
+    HomePage.validarPageTitulo('Environment');
 })
 Then("devo ser redirecionado para a página History & Culture", () => {
-    HomePage.validarHistory();
+    HomePage.validarPageTitulo('History & Culture');
 })
 Then("devo ser redirecionado para a página Science", () => {
-    HomePage.validarScience();
+    HomePage.validarPageTitulo('Science');
 })
 Then("devo ser redirecionado para a página Travel", () => {
-    HomePage.validarTravel();
+    HomePage.validarPageTitulo('Travel');
 })
