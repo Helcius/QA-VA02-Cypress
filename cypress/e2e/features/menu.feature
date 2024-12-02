@@ -1,4 +1,3 @@
-
 Feature: Testes de menu
     Vai testar a funcionalidade do menu e dos redirecionamentos.
 

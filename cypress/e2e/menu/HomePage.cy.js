@@ -8,6 +8,10 @@ clicarMenu() {
     cy.get('.MenuModal > .Button').click();
 }
 
+clicarNewsletter() {
+    cy.get('.NavBar__List--renew > .fitt-tracker > .AnchorLink').click();
+}
+
 validarMenu() {
     cy.get('.MenuModal__Content__Left').should('be.visible')
     cy.get('.MenuModal__Content__Left > .MenuModal__Content__List > :nth-child(1) > .fitt-tracker > .AnchorLink').should('have.text', 'Animals')
